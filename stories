@@ -1,0 +1,32 @@
+Stories:
+
+Deploy ec2 instance through AWS CLI
+	- create EC2 AMI instance, with security group (enable port 22 and 3000)
+         - manual install and set a helloworld web application, test access through internet 
+
+Deploy EC2 instance and application through Cloudformation
+	- create cloud formation template to start EC2 AMI instance, set up security groups, download application server, setup application
+	- deploy cloudformation template through CLI
+
+
+Setup configuration management tool Ansible, and config playbook
+	- install Ansible configuration management tool
+	- setup playbook 
+		— deploy application server
+		— setup application
+	- push application changes through Ansible
+	- install git and Ansible on EC2 instance
+	- config Ansible to run on localhost
+	- adding a cronjob to ec2 instance to pull application changes from git
+
+
+Integrate Ansible with cloudforamtion
+	- create troposphere script to generate cloudformation template to
+		— launch AMI instance
+		— config security group
+		— install git on instance
+		— install ansible instance
+		— create cron to run Ansible playbook to install and setup application, pull git 
+	
+		
+
